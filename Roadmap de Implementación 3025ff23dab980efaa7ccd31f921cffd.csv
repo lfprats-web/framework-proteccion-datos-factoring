@@ -1,0 +1,13 @@
+﻿Tarea,Estado,Fase,Prioridad legal
+Implementar Jerarquía de Policy Tags,Fase 2: Seguridad,⬜,No
+Diseñar Política de Retención (Ley 19.628),Fase 1: Diseño,⬜,No
+Establecer Data Contracts (Schema Registry),Fase 1: Diseño,⬜,No
+Definir Matriz de Clasificación de Datos,Fase 1: Diseño,⬜,No
+Configurar Enmascaramiento Dinámico,Fase 2: Seguridad,⬜,No
+Desacoplar Ingesta (Pub/Sub),Fase 3: Operación,⬜,No
+Configurar Registros Inmutables (Audit Logs),Fase 4: Gobernanza,⬜,No
+Implementar Lógica de Idempotencia,Fase 3: Operación,⬜,No
+Activar Data Observability,Fase 3: Operación,⬜,No
+Establecer Service Accounts por Rol,Fase 2: Seguridad,⬜,No
+Automatizar el Derecho al Olvido,Fase 4: Gobernanza,⬜,No
+Generar Reporte de Linaje de Datos,Fase 4: Gobernanza,⬜,No

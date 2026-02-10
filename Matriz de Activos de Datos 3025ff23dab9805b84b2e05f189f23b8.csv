@@ -1,0 +1,18 @@
+﻿Nombre (Activo),Clasificación (Tags),Control de Seguridad,Riesgo del negocio (Contexto)
+Carpeta Tributaria (F29/Renta),🔴 Crítico,Parsing automático a dato estructurado + Borrado inmediato del PDF original (TTL 1h).,"Fraude masivo, vaciamiento de cuentas."
+Datos de Contacto Deudores,🟠 Sensible,Enmascaramiento completo (***@email.com) + Click-to-dial (El operador no ve el número).,"Acoso y multas (Sernac): Si un operador descarga esta lista, puede acosar o vender los datos.
+
+"
+Mandato / Poder Notarial,🔴 Crítico,"Almacenamiento WORM (Write Once, Read Many) + Firma Digital verificada.","Suplantación de Identidad: Con este documento digital, un atacante puede firmar deudas a nombre del cliente."
+Cta. Corriente (Transferencias),🔴 Crítico,Tokenización en Bóveda (Solo se ven los últimos 4 dígitos: ****-1234).,"Desvío de Fondos: Si se altera o se ve completa, permite fraudes internos o externos."
+Scoring de Riesgo (Algoritmo),🟠 Sensible,Acceso restringido (IAM) solo a ML Pipelines + Sin acceso humano a los pesos del modelo.,"Propiedad Intelectual: Es el ""secreto de la salsa"". Si la competencia lo ve, replica tu modelo de negocio."
+Historial Comercial (DICOM),🟠 Sensible,"Expiración Automática por Partición (Purga según ley de ""Derecho al Olvido"").",Discriminación Ilegal: Mantener datos negativos históricos ilegalmente puede generar demandas masivas.
+Claves Tributarias (SII) y Bancarias,🔴 Crítico,Bóveda de Secretos (Secret Manager) + Desacoplamiento total. Nunca en logs.,"Fraude masivo inmediato. Permite vaciar cuentas y emitir facturas falsas. "
+"Imágenes Cédula (KYC) ",🔴 Crítico,Bucket WORM + Borrado por Expiración Automática tras validación.,Suplantación de Identidad (Deepfakes). Permite abrir cuentas falsas en otros bancos a nombre de las víctimas.
+Datos UAF (Lavado de Activos),🟠 Sensible,Aislamiento en Data Mart específico. Acceso exclusivo: Oficial de Cumplimiento.,"Multas Penales (Cárcel). Filtrar un Reporte de Operación Sospechosa (ROS) es un delito federal, no solo una falta."
+RUT y Razón Social (Clientes),🟠 Sensible,Policy Tag: pii_identifier + Alertas de Data Observability por descargas.,"Robo de Cartera. Si la competencia tiene esta lista, llama a tus clientes y ofrece una tasa 0.1% menor."
+Contactos (Tel/Email Dueños),🟠 Sensible,Enmascaramiento Dinámico + Click-to-dial.,Phishing Dirigido (CEO Fraud). Permite ataques directos a los dueños para autorizar pagos falsos.
+Datos de Contacto Deudores,🟠 Sensible,Enmascaramiento completo (***@email.com).,Multas SERNAC/Acoso. Riesgo reputacional alto si cobranza acosa a las personas equivocadas.
+"Monto, Tasa y Precios",🟡 Confidencial,Policy Tag: commercial_sensitive. Agrupación analítica para Marketing.,Guerra de Precios. Revela tu estrategia comercial y márgenes al mercado.
+XML de Factura (DTE),🟡 Confidencial,Almacenamiento en Bucket seguro + Desacoplamiento.,"Estafas ""Gemelas"". Los datos sirven para crear facturas falsas hiper-realistas para estafar a otros factorings."
+Logs de Consentimiento,🟢 Público,Tabla particionada append-only (Inmutable).,"Falla de Auditoría. No es un riesgo de robo, sino de no poder probar que eres legal ante el juez."
