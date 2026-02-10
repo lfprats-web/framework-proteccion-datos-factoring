@@ -1,0 +1,18 @@
+{
+  "framework": "Nexus-Fin Compliance",
+  "version": "1.0",
+  "rules": [
+    {
+      "type": "tax_folder_pdf",
+      "retention": "1 hour",
+      "action": "delete",
+      "legal_basis": "Ley 19.628"
+    },
+    {
+      "type": "audit_logs",
+      "retention": "5 years",
+      "action": "archive",
+      "legal_basis": "Normativa UAF"
+    }
+  ]
+}
