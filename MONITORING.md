@@ -1,5 +1,7 @@
 Protocolo de Monitorización y Control
-Este framework está diseñado para pasar de la documentación a la vigilancia activa. Para asegurar que los riesgos identificados en la Matriz de Activos están bajo control, el equipo técnico debe implementar los siguientes tres niveles de monitorización:
+
+Este framework está diseñado para pasar de la documentación a la vigilancia activa. 
+Para asegurar que los riesgos identificados en la Matriz de Activos están bajo control, el equipo técnico debe implementar los siguientes tres niveles de monitorización:
 
 1. Control de Ejecución (Enforcement)
 
