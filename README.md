@@ -25,3 +25,19 @@ Políticas de purga automática (TTL) para documentos sensibles (Carpeta Tributa
 
 ---
 **Arquitecto:** lfprats-web | **Tecnologías:** BigQuery, GitHub Actions, Python.
+
+---
+
+## Instrucciones para Implementación y Automatización (TI)
+
+Este repositorio no es solo documental; está estructurado para ser consumido por procesos de CI/CD y automatización de seguridad:
+
+### 1. Consumo de Políticas vía API
+Los desarrolladores pueden consumir las reglas de retención y enmascaramiento directamente desde la URL "Raw" de GitHub para alimentar scripts de limpieza automática:
+* **Endpoint de Retención:** `https://github.com/lfprats-web/framework-proteccion-datos-factoring/raw/main/policies/retention_policy.json`
+
+### 2. Sincronización de Gobernanza (SSOT)
+Se recomienda mapear los campos definidos en `matriz_activos.csv` con las etiquetas de clasificación de datos en la nube (ej. Google Cloud Data Catalog o AWS Glue) para automatizar el cumplimiento de privacidad desde el origen.
+
+### 3. Validaciones de Seguridad (GitHub Actions)
+Este framework permite configurar disparadores (triggers) que validen que cualquier cambio en la estructura de datos no viole las reglas de cumplimiento definidas en este repositorio antes de pasar a producción.
